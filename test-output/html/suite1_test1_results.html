@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Login Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Login Test</h1>
+<p>
+  Test duration: 43.942s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.orangehrmlive.demo.testsuite.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyErrorMessageWithInvalidCredentials
+      </td>
+  <td class="duration">
+    20.834s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"test123@gmail.com", "test123", "Invalid credentials"</span><br />
+    
+            <div class="testOutput">
+                        Enter username [[ChromeDriver: chrome on windows (87a4b966b9d25d2c3f43f4bdc1a13f1e)] -&gt; name: username]&nbsp; data: test123@gmail.com<br />
+                                Enter password [[ChromeDriver: chrome on windows (87a4b966b9d25d2c3f43f4bdc1a13f1e)] -&gt; name: password]&nbsp; data: test123<br />
+                                Clicking on Login link [[ChromeDriver: chrome on windows (87a4b966b9d25d2c3f43f4bdc1a13f1e)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=126.0.6478.61)<br/>
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br/>
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [87a4b966b9d25d2c3f43f4bdc1a13f1e, findElement {using=xpath, value=//span[@class=&apos;oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.61 (8dc092df54ce..., userDataDir: C:\Users\bhart\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59344}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59344/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 87a4b966b9d25d2c3f43f4bdc1a13f1e</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)<br />
+              com.orangehrmlive.demo.pages.LoginPage.getErrorMessage(LoginPage.java:75)<br />
+              com.orangehrmlive.demo.testsuite.LoginTest.verifyErrorMessageWithInvalidCredentials(LoginTest.java:71)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.orangehrmlive.demo.testsuite.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyErrorMessageWithInvalidCredentials
+      </td>
+  <td class="duration">
+    0.491s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"", "test123", "Required"</span><br />
+    
+            <div class="testOutput">
+                        Enter username [[ChromeDriver: chrome on windows (8200c247cf0f32be8a5648d040f04d98)] -&gt; name: username]&nbsp; data: <br />
+                                Enter password [[ChromeDriver: chrome on windows (8200c247cf0f32be8a5648d040f04d98)] -&gt; name: password]&nbsp; data: test123<br />
+                                Clicking on Login link [[ChromeDriver: chrome on windows (8200c247cf0f32be8a5648d040f04d98)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                Getting Required message. [[ChromeDriver: chrome on windows (8200c247cf0f32be8a5648d040f04d98)] -&gt; xpath: //span[@class=&apos;oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyErrorMessageWithInvalidCredentials
+      </td>
+  <td class="duration">
+    0.531s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"test123@gmail.com", "", "Required"</span><br />
+    
+            <div class="testOutput">
+                        Enter username [[ChromeDriver: chrome on windows (44606104df0b69fef342becf88531a36)] -&gt; name: username]&nbsp; data: test123@gmail.com<br />
+                                Enter password [[ChromeDriver: chrome on windows (44606104df0b69fef342becf88531a36)] -&gt; name: password]&nbsp; data: <br />
+                                Clicking on Login link [[ChromeDriver: chrome on windows (44606104df0b69fef342becf88531a36)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                Getting Required message. [[ChromeDriver: chrome on windows (44606104df0b69fef342becf88531a36)] -&gt; xpath: //span[@class=&apos;oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyErrorMessageWithInvalidCredentials
+      </td>
+  <td class="duration">
+    0.433s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"", "", "Required"</span><br />
+    
+            <div class="testOutput">
+                        Enter username [[ChromeDriver: chrome on windows (ec9c3c92d7e8c1cd904dd167d06820ed)] -&gt; name: username]&nbsp; data: <br />
+                                Enter password [[ChromeDriver: chrome on windows (ec9c3c92d7e8c1cd904dd167d06820ed)] -&gt; name: password]&nbsp; data: <br />
+                                Clicking on Login link [[ChromeDriver: chrome on windows (ec9c3c92d7e8c1cd904dd167d06820ed)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                Getting Required message. [[ChromeDriver: chrome on windows (ec9c3c92d7e8c1cd904dd167d06820ed)] -&gt; xpath: //span[@class=&apos;oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatTheLogoDisplayOnHomePage
+      </td>
+  <td class="duration">
+    1.355s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Enter username [[ChromeDriver: chrome on windows (768f6585979f76fcedcd51527795fb3a)] -&gt; name: username]&nbsp; data: Admin<br />
+                                Enter password [[ChromeDriver: chrome on windows (768f6585979f76fcedcd51527795fb3a)] -&gt; name: password]&nbsp; data: admin123<br />
+                                Clicking on Login link [[ChromeDriver: chrome on windows (768f6585979f76fcedcd51527795fb3a)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                Checking the logo is displayed [[ChromeDriver: chrome on windows (768f6585979f76fcedcd51527795fb3a)] -&gt; xpath: //div[@class=&apos;oxd-brand-banner&apos;]//img]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldLogOutSuccessFully
+      </td>
+  <td class="duration">
+    2.393s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Enter username [[ChromeDriver: chrome on windows (dec80511f2f6a5830b83932fd1467af4)] -&gt; name: username]&nbsp; data: Admin<br />
+                                Enter password [[ChromeDriver: chrome on windows (dec80511f2f6a5830b83932fd1467af4)] -&gt; name: password]&nbsp; data: admin123<br />
+                                Clicking on Login link [[ChromeDriver: chrome on windows (dec80511f2f6a5830b83932fd1467af4)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                Clicking on user profile image [[ChromeDriver: chrome on windows (dec80511f2f6a5830b83932fd1467af4)] -&gt; xpath: //img[@class=&apos;oxd-userdropdown-img&apos;]]<br />
+                                Clicking on logout link [[ChromeDriver: chrome on windows (dec80511f2f6a5830b83932fd1467af4)] -&gt; link text: Logout]<br />
+                                Getting Login Panel Text [[ChromeDriver: chrome on windows (dec80511f2f6a5830b83932fd1467af4)] -&gt; xpath: //h5[normalize-space()=&apos;Login&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldLoginSuccessFully
+      </td>
+  <td class="duration">
+    1.663s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Enter username [[ChromeDriver: chrome on windows (1b39c3661c97dc582de83764a96c5012)] -&gt; name: username]&nbsp; data: Admin<br />
+                                Enter password [[ChromeDriver: chrome on windows (1b39c3661c97dc582de83764a96c5012)] -&gt; name: password]&nbsp; data: admin123<br />
+                                Clicking on Login link [[ChromeDriver: chrome on windows (1b39c3661c97dc582de83764a96c5012)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                Getting the Dashboard page heading [[ChromeDriver: chrome on windows (1b39c3661c97dc582de83764a96c5012)] -&gt; xpath: //div[@class=&apos;oxd-topbar-header-title&apos;]//h6]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
